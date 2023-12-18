@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="16dp"
+        android:numColumns="2"
+        android:padding="16dp"
+        android:verticalSpacing="50dp" />
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/baseline_add_24"
+            android:contentDescription="Add Item"
+            android:onClick="onAddItemClick" />
+
+        <Button
+            android:id="@+id/phoneButton"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/baseline_notifications_none_24"
+            android:contentDescription="Phone Button"
+            android:onClick="onPhoneClick" />
+
+        <Button
+            android:id="@+id/logOut"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:background="@drawable/baseline_logout_24"
+            android:contentDescription="Logout"
+            android:onClick="logOut"/>
+    </LinearLayout>
+</RelativeLayout>

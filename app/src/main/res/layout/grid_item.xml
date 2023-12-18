@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+    android:id="@+id/itemIdTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_below="@id/textView"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="20dp"
+    android:textColor="@android:color/black"
+    android:textSize="16sp"
+    android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:paddingEnd="8dp" />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width=".2in"
+        android:layout_height=".2in"
+        android:padding="5dp"
+        android:background="@drawable/baseline_edit_24"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/deleteButton"
+        android:onClick="onEditClick" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width=".2in"
+        android:layout_height=".2in"
+        android:background="@drawable/baseline_restore_from_trash_24"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onDeleteClick" />
+</RelativeLayout>

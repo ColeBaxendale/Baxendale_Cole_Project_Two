@@ -1,0 +1,8 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Circular background shape -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/lighterPurple" />
+        </shape>
+    </item>
+</layer-list>
